@@ -1,0 +1,1087 @@
+/*--------------------------------------------------------------------- scrollbar ---------------------------------------------------------------------*/
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid white;
+	background-color: #b2bec3;
+}
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #dfe6e9;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #ffc72c;
+	border-radius: 10px;
+}
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+/*****----------------------------------------
+1) font-family: 'Rajdhani', sans-serif;
+2) font-family: 'Poppins', sans-serif;
+3) font-family: 'Raleway', sans-serif;
+4) font-family: 'Roboto', sans-serif;
+5) font-family: 'Open Sans', sans-serif;
+6) font-family: 'Italiana', serif;
+----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(css/animate.min.css);
+@import url(css/normalize.css);
+@import url(css/icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(css/meanmenu.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/swiper.min.css);
+@import url(css/slick.css);
+@import url(css/jquery.fancybox.min.css);
+@import url(css/jquery-ui.css);
+@import url(css/nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #bc9320;
+     font-size: 14px;
+     font-family: 'Open Sans', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 18px;
+}
+
+h2 {
+     font-size: 16px;
+}
+
+h3 {
+     font-size: 16px;
+}
+
+h4 {
+     font-size: 14px
+}
+
+h5 {
+     font-size: 12px
+}
+
+h6 {
+     font-size: 11px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+:focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #bc9320;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     float: left;
+     width: 100%;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+
+/**-- heading section --**/
+
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #bc9320;
+     width: 100%;
+     height: 100%;
+}
+
+.loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader img {
+     width: 280px;
+}
+
+
+/*-- header area --*/
+
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+
+/*-- navigation--*/
+.top{
+background: #000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation.navbar {
+     float: right;
+     background: #000000;
+     clear: both;
+     padding: 23px 25px !important;
+     border-radius: 64px;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     padding: 0 20px;
+     color: #ffffff;
+     font-size: 25px;
+     line-height: 20px;
+     font-weight: 500;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     color: #ffc72c;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+     color: #ffc72c;
+}
+
+.navbar-expand-md .navbar-nav {
+     padding-right: 10px;
+}
+
+.login_btn a {
+     background: #ffc72c;
+     padding: 9px 32px !important;
+     display: inline;
+     border-radius: 20px;
+     color: #fff !important;
+     margin: 0 10px;
+}
+
+.login_btn a:hover {
+     background: #000 !important;
+}
+
+.sea_icon a {
+     color: #8c8c8c !important;
+}
+
+.header {
+     width: 100%;
+     padding: 30px 30px;
+     background: transparent;
+     position: absolute;
+     z-index: 999;
+     border-top: #090102 solid 11px;
+}
+
+.logo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100px;
+     width: 120px;
+}
+
+
+/** banner section **/
+
+.banner_main {
+     background: #f5f6f6;
+     padding: 150px 0px 90px 0px;
+}
+
+.text-bg {
+     text-align: center;
+}
+
+.text-bg h1 {
+     color: #070404;
+     font-size: 40px;
+     line-height: 76px;
+     padding-bottom: 45px;
+     text-transform: uppercase;
+}
+
+.text-bg .read_more {
+     border: #1a1a1a solid 2px;
+     color: #1a1a1a !important;
+     font-weight: 500;
+     display: block;
+     margin: 0 auto;
+     margin-top: 44px;
+}
+
+#banner1 .carousel-caption {
+     position: inherit;
+     padding: 0;
+}
+
+#banner1 .carousel-indicators {
+     display: none;
+}
+
+#banner1 .carousel-control-prev,
+#banner1 .carousel-control-next {
+     width: 62px;
+     height: 60px;
+     background: transparent;
+     border: #1a1a1a solid 2px;
+     opacity: 1;
+     font-size: 30px;
+     color: #131215;
+     border-radius: 60px;
+     top: 43%;
+}
+
+#banner1 .carousel-control-prev:hover,
+#banner1 .carousel-control-next:hover,
+#banner1 .carousel-control-prev:focus,
+#banner1 .carousel-control-next:focus {
+     background: transparent;
+     border: #ffc72c solid 2px;
+     color: #ffc72c;
+}
+
+#banner1 a.carousel-control-prev {
+     position: absolute;
+     left: 20px;
+     bottom: 10px;
+}
+
+#banner1 a.carousel-control-next {
+     position: absolute;
+     right: 20px;
+     bottom: 10px;
+}
+
+
+/** end banner section **/
+
+.titlepage h2 {
+     font-size: 35px;
+     color: #2a2a2c;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.read_more {
+     font-size: 17px;
+     background-color: transparent;
+     border: #ffffff solid 2px;
+     color: #1a1a1a;
+     padding: 15px 0px;
+     width: 100%;
+     max-width: 222px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: 500;
+     border-radius: 40px;
+}
+
+.read_more:hover {
+     background: #ffc72c;
+     color: #fff !important;
+     transition: ease-in all 0.5s;
+}
+
+
+/** about section **/
+
+.about {
+     padding: 40px 0 30px 0;
+}
+
+.about .about_img {
+     margin-left: -40px;
+}
+
+.about .titlepage::before {
+     position: absolute;
+     content: "";
+     width: 220px;
+     height: 411px;
+     right: -30px;
+     background: url(../images/about_right_cross.jpg);
+     background-repeat: no-repeat;
+     top: -27px;
+     z-index: -1;
+}
+
+.about .about_img figure {
+     margin: 0;
+}
+
+.about .titlepage {
+     border: #000 solid 1px;
+     padding: 40px 40px;
+     z-index: 10018;
+     background: #fff;
+     margin-right: 40px;
+}
+
+.about .titlepage p {
+     color: #2a2a2c;
+     font-size: 17px;
+     line-height: 35px;
+     font-weight: 400;
+     padding-top: 20px;
+}
+
+.about .read_more {
+     border: #1a1a1a solid 2px;
+     color: #1a1a1a;
+     font-weight: 500;
+     margin-top: 44px;
+}
+
+
+/** end about section **/
+
+
+/** Our  Glasses section **/
+
+.glasses {
+     background: #fff;
+     margin-top: 90px;
+}
+
+.glasses .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.glasses .titlepage p {
+     font-size: 17px;
+     line-height: 30px;
+     font-weight: 400;
+     padding-top: 10px;
+}
+
+.blu {
+     color: #ffc72c;
+     text-transform: initial;
+}
+
+.glasses .glasses_box {
+     text-align: center;
+     border: #555556 solid 1px;
+     border-radius: 2px;
+     padding: 120px 0px 30px 0px;
+     margin-bottom: 30px;
+     background: #0000007a
+}
+
+.glasses .glasses_box figure {
+     margin: 0;
+}
+
+.glasses .glasses_box h3 {
+     color: #100d0d;
+     font-size: 22px;
+     line-height: 20px;
+     padding: 70px 0px 9px 0px;
+}
+
+.glasses .glasses_box p {
+     color: #2a2a2c;
+     font-size: 18px;
+     line-height: 28px;
+     font-weight: 400;
+}
+
+.glasses .read_more {
+     border: #1a1a1a solid 2px;
+     font-weight: 500;
+     display: block;
+     margin: 0 auto;
+     margin-top: 44px;
+}
+
+
+/** end Our  Glasses section **/
+
+
+/** Our shop section **/
+
+.shop {
+     margin-top: 90px;
+     background: #fefdf9;
+     border-top: #f2f1ed solid 1px;
+     border-bottom: #f2f1ed solid 1px;
+}
+
+.shop .shop_img figure {
+     margin: 0;
+}
+
+.shop .shop_img figure img {
+     width: 100%;
+}
+
+.padding_right0 {
+     padding-right: 0;
+}
+
+.shop .max_width {
+     text-align: left;
+     background: #030404;
+     height: 100%;
+     padding-top: 86px;
+     padding-left: 50px;
+     padding-bottom: 90px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.shop .titlepage {
+     max-width: 612px;
+     width: 100%;
+     float: left;
+}
+
+.shop .titlepage h2 {
+     color: #fff;
+     border-bottom: #fff solid 1px;
+     padding-bottom: 10px;
+     float: left;
+     clear: both;
+}
+
+.shop .titlepage p {
+     color: #fff;
+     font-size: 17px;
+     line-height: 30px;
+     padding: 40px 0px 80px 0;
+     width: 100%;
+     display: inline-block;
+}
+
+.shop .titlepage .read_more {
+     color: #fff !important
+}
+
+
+/** end Our shop section **/
+
+
+/** clients section **/
+
+.clients {
+     padding: 90px 0 70px 0;
+}
+
+.clients .titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.clients .titlepage p {
+     color: #2a2a2c;
+     font-size: 17px;
+     line-height: 29px;
+     padding-top: 10px;
+}
+
+.clients_box h3 {
+     color: #2a2a2c;
+     font-size: 26px;
+     line-height: 30px;
+     padding-top: 23px;
+     font-weight: 600;
+}
+
+.clients_box p {
+     color: #2a2a2c;
+     font-size: 17px;
+     line-height: 30px;
+}
+
+.clients_Carousel .carousel-caption {
+     position: inherit;
+     padding: 0;
+}
+
+.clients_box {
+     border: #606060 solid 1px;
+     padding: 40px 32px 40px 0px;
+     float: left;
+     text-align: left;
+     margin-left: 89px;
+}
+
+.clients_box figure {
+     margin: 0;
+     float: left;
+     margin-left: -102px;
+     padding-right: 30px;
+}
+
+#myCarousel .carousel-indicators {
+     bottom: -70px;
+}
+
+#myCarousel .carousel-indicators li {
+     width: 20px;
+     height: 20px;
+     border-radius: 20px;
+     background: #111;
+}
+
+#myCarousel .carousel-indicators .active {
+     background: #8c8a8a;
+}
+
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+     display: none;
+}
+
+
+/** end clients section **/
+
+
+/** contact section **/
+
+.contact {
+     margin-top: 90px;
+}
+
+.contact .main_form h3 {
+     color: #4b4b4c;
+     font-size: 27px;
+     line-height: 30px;
+     text-align: center;
+     display: block;
+     font-weight: 600;
+     padding: 0;
+}
+
+#map {
+     height: 100%;
+     min-height: 732px;
+}
+
+.main_form {
+     position: absolute;
+     z-index: 999;
+     background: #fff;
+     padding: 40px 50px;
+     margin-top: 107px;
+}
+
+.main_form .contactus {
+     border-bottom: #111111 solid 1px;
+     margin-bottom: 25px;
+     width: 100%;
+     height: 57px;
+     background: transparent;
+     color: #4b4b4c;
+     font-size: 18px;
+     font-weight: normal;
+     border-top: inherit;
+     border-left: inherit;
+     border-right: inherit;
+}
+
+.main_form .contactusmess {
+     border-bottom: #111111 solid 1px;
+     margin-bottom: 25px;
+     width: 100%;
+     padding-top: 40px;
+     padding-bottom: 14px;
+     background: transparent;
+     color: #4b4b4c;
+     ;
+     font-size: 18px;
+     font-weight: normal;
+     border-top: inherit;
+     border-left: inherit;
+     border-right: inherit;
+}
+
+.send_btn {
+     background: #ffc72c;
+     font-weight: 600;
+     font-size: 18px;
+     width: 100%;
+     color: #fff;
+     height: 50px;
+     border-radius: 30px;
+     margin-top: 20px;
+     transition: ease-in all 0.5s;
+     text-transform: uppercase;
+}
+
+.send_btn:hover {
+     background: #4b4b4c;
+     transition: ease-in all 0.5s;
+}
+
+#request *::placeholder {
+     color: #4b4b4c;
+     opacity: 1;
+}
+
+
+/** end contact section **/
+
+
+/** footer **/
+
+.site-footer
+{
+  background-color:#000000;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.Instagram:hover
+{
+  background-color:#c13584
+}
+.social-icons a.Whatsapp:hover
+{
+  background-color: #25D366
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/** end footer **/
+
+
+/** inner page css **/
+
+.position_head .header {
+     position: inherit;
+     background: #000000;
+}
+
+.position_head .glasses,
+.shop {
+     margin-bottom: 90px;
+}
+
+.about_info {
+     font-size: 40px;
+     font-family:'Roboto',Arial,sans-serif;
+     text-align: center; /* Centra el texto */ /* Añade espacio debajo del h1 */
+     margin-bottom: -50px;
+}  
+
+.display-4 {
+     color: #ffc72c;
+     text-transform: initial;
+}
+
+/** end inner page css **/
+
+#nkh-grid-container { height: 670px; margin: 0 auto; position: relative; width: 900px; }
+.nkh-grid-item { background-color: #fff; border: solid 1px #e4e4e4 !important; cursor: pointer; overflow: hidden; position: absolute; }
+.nkh-grid-item-media { position: relative; height: 100%; width: 100%; }
+.nkh-grid-item-media img { position: absolute; top: 0; left: 0; }
+
+#nkh-grid-item-0 { height: 208px; left: 0; top: 0; width: 438px; }
+#nkh-grid-item-1 { height: 208px; right: 0; top: 0; width: 438px; }
+#nkh-grid-item-1 .nkh-grid-item-img-replacement { top: 0; left: auto; right: 0; }
+#nkh-grid-item-2 { bottom:0; height:438px; left:0; width:208px; }
+#nkh-grid-item-2 .nkh-grid-item-img-replacement { bottom: 0; top: auto; left: 0; right: auto; }
+#nkh-grid-item-3 { height: 208px; top: 230px; right: 0; width: 668px; }
+#nkh-grid-item-3 .nkh-grid-item-img-replacement { bottom: 50%; top: 50%; left: auto; margin-top: -334px; right: 0; }
+#nkh-grid-item-4 { bottom: 0; height: 208px; left: 230px; width: 438px; }
+#nkh-grid-item-4 .nkh-grid-item-img-replacement { bottom: 0; top: auto; left: 50%; margin-left: -449px; right: 50%; }
+#nkh-grid-item-5 { bottom: 0; height: 208px; right: 0; width: 208px; }
+#nkh-grid-item-5 .nkh-grid-item-img-replacement { bottom: 0; top: auto; left: auto; right: 0; }
+
+.nkh-grid-item-img-replacement { display: none; }
+
+
+/** Whatsapp Buttom **/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#ffc72c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+     font-size:30px;
+	box-shadow: 2px 2px 3px #000000;
+     z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/**end Whatsapp Buttom **/
+
+/* Input Field CSS */
+.datainput{position:relative;margin:5px 0 20px}.datainput p{font-size:12px;background:#eee;display:inline-block;padding:5px 15px;border-radius:.5rem}
+.whatsapp-form textarea{min-height:120px}.datainput select{padding:12px 0;color:#555;font-size:14px;width:100%;border:0;border-bottom:1px solid #ddd;outline:none;background:#fff}
+.datainput input,.datainput textarea{font-size:15px;padding:15px 0;display:block;width:100%;border:none;border-bottom:1px solid #ddd}
+.datainput input:focus,.datainput textarea:focus{outline:none}
+.datainput label{color:#999;font-size:14px;font-weight:400;position:absolute;pointer-events:none;left:0;top:18px;transition:.2s ease all}
+.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:14px;color:#ffc72c}#notif-license span{font-size:40px}#notif-license{display:none;position:fixed}.bar{position:relative;display:block;width:100%}.bar:before,.bar:after{content:'';height:2px;width:0;bottom:1px;position:absolute;background:#ffc72c;transition:.2s ease all}.bar:before{left:50%}.bar:after{right:50%}.datainput input:focus~.bar:before,.datainput input:focus~.bar:after,.datainput textarea:focus~.bar:before,.datainput textarea:focus~.bar:after{width:50%}.indigox{background:#3f51b5}.orangex{background:#ff9800}.pinkx{background:#e91e63}.bluex{background:#2196F3}.purplex{background:#9c27b0}.redx{background:#F44336}.greenx{background:#4CAF50}.highlight{position:absolute;height:50%;width:100px;top:25%;left:0;pointer-events:none;opacity:.5}.datainput input:focus~.highlight,.datainput textarea:focus~.highlight{animation:inputHighlighter .3s ease}.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:13px;color:#ffc72c}
+
+/* Default Whatsapp Form CSS by www.idblanter.com */
+form.whatsapp-form {
+     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.28);
+     border-radius: .5rem;
+     padding: 20px;
+     box-sizing: border-box;
+     color: #000000;
+     font-size: 14px;
+     line-height: 1.5;
+     font-family:'Roboto',Arial,sans-serif;
+}
+.whatsapp-form a.send_form {
+     color: #fff;
+     background: #ffc72c;
+     text-decoration: none;
+     display: inline-block;
+     padding: 10px 25px;
+     border-radius: .3rem;
+     font-weight: 700;
+     letter-spacing: .5px;
+     font-size: 15px;
+}
+#text-info span {
+     display: block;
+     padding: 10px 15px;
+     text-align: center;
+     font-weight: 700;
+     margin: 15px 0;
+     border-radius: .5rem;
+}
+#text-info span.yes {
+     background: #c6ffc5;
+     color: #0ea904;
+}
+#text-info span.no {
+     background: #ffc5c5;
+     color: #ce0404;
+}
+.whatsapp-form{
+     width:100%;
+     max-width:700px;
+     margin:0 auto;
+     box-sizing:border-box;
+}
